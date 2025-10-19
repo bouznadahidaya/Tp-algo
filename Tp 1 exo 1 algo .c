@@ -1,7 +1,7 @@
 
 #include<stdio.h>
 Int main (){
-Int I,j,n, x;
+Int i,j,n, x;
 Printf("donner the size of  matrix=");
 Scanf("%d",n);
 Char mat[n][n];
