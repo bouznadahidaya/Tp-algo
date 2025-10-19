@@ -20,3 +20,4 @@ printf(" %3d",mat[i][j]);
 printf("\n");
 }}
 return 0;
+}
