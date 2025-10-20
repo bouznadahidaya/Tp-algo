@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int add (int a, int b){
+	return a+b;
+}
+int max(int a, int b){
+	if(a>b){
+		return a;
+	}else 
+	return b;
+}
+float  average (float arr[], int n){
+float   res =0; 
+	for (int i=0;i<n;i++){
+		res+=arr[i];
+	}return  res/n ;
+}
+int main (){
+	int size , i, a,b ;
+	printf("donner a et b ");
+	scanf("%d %d", &a, &b);
+	printf("donner size of arr");
+	scanf("%d", &size);
+	float arr[size];
+	for (i=0;i<size;i++){
+		printf("donner les element arr[%d]= ", i);
+		scanf ("%f", &arr[i]);
+	}
+	printf("maximum= %d\n", max(a,b));
+	printf("sum = %d\n", add(a, b));
+	printf("average = %.2f\n", average (arr, size) );
+}
